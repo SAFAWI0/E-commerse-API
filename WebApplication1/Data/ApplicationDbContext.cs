@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using project.Models;
+using WebApplication1.Models;
 
 namespace project.Data
 {
@@ -11,6 +12,7 @@ namespace project.Data
         }
         public DbSet<User> Users { get; set; }
         public DbSet <Product> Products { get; set; }
-        public DbSet <Categorie> Categorias { get; set; } 
+        public DbSet <Categorie> Categorias { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
